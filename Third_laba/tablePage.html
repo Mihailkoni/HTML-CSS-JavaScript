@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Информация о топ-50 российских акциях</title>
+</head>
+
+<body background="images/back.jpg">
+
+    <a name="table"></a>
+    <p>
+        <a href="mainPage.html#main">Инвестиции в российские компании</a><br>
+        <a href="#table"><strong>Топ-50 российских акций</strong></a>
+    </p>
+    <hr>
+
+    <details>
+      <summary>График</summary>
+  
+      <table cellpadding="5">
+          <tr>
+              <th>Значение по оси OX</th>
+              <th>Результат</th>
+          </tr>
+          <tr>
+              <td>
+                  <input type="radio" name="price"> Цена акции <br>
+                  <input type="radio" name="capital"> Капитализация <br>
+                  <input type="radio" name="p/e"> P/E <br>
+                  <input type="radio" name="p/s"> P/S <br>
+              </td>
+              <td>
+                  <input type="checkbox" name="min"> Минимальное значение <br>
+                  <input type="checkbox" name="max"> Максимальное значение <br>
+                  <input type="checkbox" name="middle"> Среднее значение <br>
+              </td>
+          </tr>
+      </table>
+  
+      <p>
+          <input type="submit" value="Построить">
+      </p>
+      <p>Здесь будет график</p>
+  
+  </details>
+  
+  <details>
+      <summary>Фильтр</summary>
+  
+      <form>
+          <p>
+              Название компании: <input type="text" placeholder="Введите название компании">
+          </p>
+          <p>
+              Сектор: <input type="text" placeholder="Введите сектор">
+          </p>
+          <p>
+              Биржевой индекс: <input type="text" placeholder="Введите индекс">
+          </p>
+          <p>
+              Цена акции: от <input type="number"> до <input type="number">
+          </p>
+          <p>
+              Капитализация: от <input type="number"> до <input type="number">
+          </p>
+          <p>
+              P/E: от <input type="number" step="0.1"> до <input type="number" step="0.1">
+          </p>
+          <p>
+              P/S: от <input type="number" step="0.1"> до <input type="number" step="0.1">
+          </p>
+      </form>
+  
+      <input type="submit" value="Найти">
+      <p></p>
+  
+  </details>
+  
+  <details>
+      <summary>Сортировка</summary>
+  
+      Первый уровень: <select name="1lvl">
+          <option value="NO" selected>Нет</option>
+          <option value="name">Название компании</option>
+          <option value="sector">Сектор</option>
+          <option value="price">Цена акции</option>
+          <option value="capital">Капитализация</option>
+          <option value="p/e">P/E</option>
+          <option value="p/s">P/S</option>
+      </select>
+      по убыванию? <input type="checkbox" name="first_level">
+      <br>
+  
+      Второй уровень: <select name="2lvl">
+          <option value="NO" selected>Нет</option>
+          <option value="name">Название компании</option>
+          <option value="sector">Сектор</option>
+          <option value="price">Цена акции</option>
+          <option value="capital">Капитализация</option>
+          <option value="p/e">P/E</option>
+          <option value="p/s">P/S</option>
+      </select>
+      по убыванию? <input type="checkbox" name="second_level">
+      <br>
+  
+      Третий уровень: <select name="3lvl">
+          <option value="NO" selected>Нет</option>
+          <option value="name">Название компании</option>
+          <option value="sector">Сектор</option>
+          <option value="price">Цена акции</option>
+          <option value="capital">Капитализация</option>
+          <option value="p/e">P/E</option>
+          <option value="p/s">P/S</option>
+      </select>
+      по убыванию? <input type="checkbox" name="third_level">
+      <br>
+  
+      <p><input type="submit" value="Сортировать"></p>
+  
+  </details>
+
+    <p></p>
+    <table border="2" cellspacing="0" cellpadding="7">
+
+      <tr>
+        <th>Название компании</th>
+        <th>Сектор</th>
+        <th>Цена акции (₽)</th>
+        <th>Изменение за день (%)</th>
+        <th>Биржевой индекс</th>
+        <th>Капитализация (млрд ₽)</th>
+        <th>P/E (Price to Earnings)</th>
+        <th>P/S (Price to Sales)</th>
+      </tr>
+      <tr>
+        <td>Газпром</td>
+        <td>Энергетика</td>
+        <td>300</td>
+        <td>+1.2%</td>
+        <td>IMOEX</td>
+        <td>8000</td>
+        <td>4.5</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>Сбербанк</td>
+        <td>Финансы</td>
+        <td>280</td>
+        <td>+0.5%</td>
+        <td>IMOEX</td>
+        <td>7000</td>
+        <td>6.2</td>
+        <td>2.0</td>
+      </tr>
+      <tr>
+        <td>Лукойл</td>
+        <td>Нефть и газ</td>
+        <td>4500</td>
+        <td>-0.3%</td>
+        <td>IMOEX</td>
+        <td>5500</td>
+        <td>5.0</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Норникель</td>
+        <td>Металлургия</td>
+        <td>15000</td>
+        <td>+0.7%</td>
+        <td>IMOEX</td>
+        <td>4500</td>
+        <td>8.0</td>
+        <td>3.2</td>
+      </tr>
+      <tr>
+        <td>Роснефть</td>
+        <td>Нефть и газ</td>
+        <td>520</td>
+        <td>-0.1%</td>
+        <td>IMOEX</td>
+        <td>6000</td>
+        <td>6.8</td>
+        <td>1.5</td>
+      </tr>
+      <tr>
+        <td>Магнит</td>
+        <td>Ритейл</td>
+        <td>5100</td>
+        <td>+1.8%</td>
+        <td>IMOEX</td>
+        <td>1000</td>
+        <td>10.1</td>
+        <td>0.8</td>
+      </tr>
+      <tr>
+        <td>Аэрофлот</td>
+        <td>Транспорт</td>
+        <td>70</td>
+        <td>-1.2%</td>
+        <td>IMOEX</td>
+        <td>300</td>
+        <td>7.5</td>
+        <td>0.5</td>
+      </tr>
+      <tr>
+        <td>Яндекс</td>
+        <td>Технологии</td>
+        <td>3000</td>
+        <td>+2.5%</td>
+        <td>IMOEX</td>
+        <td>2000</td>
+        <td>50.0</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>Татнефть</td>
+        <td>Нефть и газ</td>
+        <td>720</td>
+        <td>-0.5%</td>
+        <td>IMOEX</td>
+        <td>700</td>
+        <td>5.6</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>Полюс</td>
+        <td>Золото</td>
+        <td>17500</td>
+        <td>+1.0%</td>
+        <td>IMOEX</td>
+        <td>1200</td>
+        <td>7.0</td>
+        <td>2.2</td>
+      </tr>
+      <tr>
+        <td>ФосАгро</td>
+        <td>Химия</td>
+        <td>4500</td>
+        <td>+0.4%</td>
+        <td>IMOEX</td>
+        <td>900</td>
+        <td>9.2</td>
+        <td>2.0</td>
+      </tr>
+      <tr>
+        <td>Сургутнефтегаз</td>
+        <td>Нефть и газ</td>
+        <td>40</td>
+        <td>-0.2%</td>
+        <td>IMOEX</td>
+        <td>500</td>
+        <td>4.2</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <td>Интер РАО</td>
+        <td>Энергетика</td>
+        <td>5</td>
+        <td>+0.6%</td>
+        <td>IMOEX</td>
+        <td>300</td>
+        <td>8.0</td>
+        <td>0.6</td>
+      </tr>
+      <tr>
+        <td>ВТБ</td>
+        <td>Финансы</td>
+        <td>0.03</td>
+        <td>-0.4%</td>
+        <td>IMOEX</td>
+        <td>1500</td>
+        <td>3.5</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Мосэнерго</td>
+        <td>Энергетика</td>
+        <td>3.5</td>
+        <td>+0.8%</td>
+        <td>IMOEX</td>
+        <td>200</td>
+        <td>5.0</td>
+        <td>0.7</td>
+      </tr>
+      <tr>
+        <td>МТС</td>
+        <td>Телекоммуникации</td>
+        <td>320</td>
+        <td>+0.9%</td>
+        <td>IMOEX</td>
+        <td>1000</td>
+        <td>6.5</td>
+        <td>1.8</td>
+      </tr>
+      <tr>
+        <td>Башнефть</td>
+        <td>Нефть и газ</td>
+        <td>1600</td>
+        <td>-0.3%</td>
+        <td>IMOEX</td>
+        <td>500</td>
+        <td>5.3</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>Русгидро</td>
+        <td>Энергетика</td>
+        <td>0.6</td>
+        <td>+1.3%</td>
+        <td>IMOEX</td>
+        <td>600</td>
+        <td>9.8</td>
+        <td>0.5</td>
+      </tr>
+      <tr>
+        <td>АЛРОСА</td>
+        <td>Добыча алмазов</td>
+        <td>90</td>
+        <td>+0.7%</td>
+        <td>IMOEX</td>
+        <td>900</td>
+        <td>12.0</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <td>Юнипро</td>
+        <td>Энергетика</td>
+        <td>2.7</td>
+        <td>-0.1%</td>
+        <td>IMOEX</td>
+        <td>350</td>
+        <td>6.5</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Россети</td>
+        <td>Энергетика</td>
+        <td>1.5</td>
+        <td>+0.4%</td>
+        <td>IMOEX</td>
+        <td>250</td>
+        <td>5.2</td>
+        <td>0.6</td>
+      </tr>
+      <tr>
+        <td>Транснефть</td>
+        <td>Транспорт нефти</td>
+        <td>152000</td>
+        <td>+0.2%</td>
+        <td>IMOEX</td>
+        <td>3200</td>
+        <td>9.1</td>
+        <td>2.4</td>
+      </tr>
+      <tr>
+        <td>Северсталь</td>
+        <td>Металлургия</td>
+        <td>2100</td>
+        <td>-0.4%</td>
+        <td>IMOEX</td>
+        <td>1600</td>
+        <td>5.4</td>
+        <td>1.7</td>
+      </tr>
+      <tr>
+        <td>Мечел</td>
+        <td>Металлургия</td>
+        <td>80</td>
+        <td>+1.0%</td>
+        <td>IMOEX</td>
+        <td>400</td>
+        <td>6.8</td>
+        <td>0.5</td>
+      </tr>
+      <tr>
+        <td>Энел Россия</td>
+        <td>Энергетика</td>
+        <td>1.2</td>
+        <td>-0.5%</td>
+        <td>IMOEX</td>
+        <td>100</td>
+        <td>4.8</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <td>ТГК-1</td>
+        <td>Энергетика</td>
+        <td>0.02</td>
+        <td>+0.3%</td>
+        <td>IMOEX</td>
+        <td>50</td>
+        <td>3.5</td>
+        <td>0.2</td>
+      </tr>
+      <tr>
+        <td>ФСК ЕЭС</td>
+        <td>Энергетика</td>
+        <td>0.1</td>
+        <td>+0.2%</td>
+        <td>IMOEX</td>
+        <td>600</td>
+        <td>5.9</td>
+        <td>0.4</td>
+      </tr>
+      <tr>
+        <td>Детский мир</td>
+        <td>Ритейл</td>
+        <td>120</td>
+        <td>+1.5%</td>
+        <td>IMOEX</td>
+        <td>80</td>
+        <td>12.5</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <td>ПИК</td>
+        <td>Недвижимость</td>
+        <td>450</td>
+        <td>+0.4%</td>
+        <td>IMOEX</td>
+        <td>900</td>
+        <td>7.5</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Группа ЛСР</td>
+        <td>Недвижимость</td>
+        <td>900</td>
+        <td>+0.9%</td>
+        <td>IMOEX</td>
+        <td>200</td>
+        <td>5.2</td>
+        <td>0.7</td>
+      </tr>
+      <tr>
+        <td>ОГК-2</td>
+        <td>Энергетика</td>
+        <td>0.5</td>
+        <td>+0.3%</td>
+        <td>IMOEX</td>
+        <td>150</td>
+        <td>4.9</td>
+        <td>0.8</td>
+      </tr>
+      <tr>
+        <td>Российские железные дороги</td>
+        <td>Транспорт</td>
+        <td>1400</td>
+        <td>+1.0%</td>
+        <td>IMOEX</td>
+        <td>1000</td>
+        <td>8.2</td>
+        <td>1.4</td>
+      </tr>
+      <tr>
+        <td>Эталон</td>
+        <td>Недвижимость</td>
+        <td>50</td>
+        <td>+2.1%</td>
+        <td>IMOEX</td>
+        <td>60</td>
+        <td>3.8</td>
+        <td>0.5</td>
+      </tr>
+      <tr>
+        <td>Фармстандарт</td>
+        <td>Фармацевтика</td>
+        <td>700</td>
+        <td>+0.4%</td>
+        <td>IMOEX</td>
+        <td>250</td>
+        <td>6.0</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>НЛМК</td>
+        <td>Металлургия</td>
+        <td>210</td>
+        <td>+0.8%</td>
+        <td>IMOEX</td>
+        <td>500</td>
+        <td>9.3</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>КамАЗ</td>
+        <td>Автопром</td>
+        <td>90</td>
+        <td>+1.7%</td>
+        <td>IMOEX</td>
+        <td>70</td>
+        <td>5.7</td>
+        <td>0.6</td>
+      </tr>
+      <tr>
+        <td>Росгосстрах</td>
+        <td>Страхование</td>
+        <td>10</td>
+        <td>+0.5%</td>
+        <td>IMOEX</td>
+        <td>150</td>
+        <td>7.0</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <td>Северная звезда</td>
+        <td>Золото</td>
+        <td>9500</td>
+        <td>+1.3%</td>
+        <td>IMOEX</td>
+        <td>1100</td>
+        <td>7.3</td>
+        <td>2.0</td>
+      </tr>
+      <tr>
+        <td>Обувь России</td>
+        <td>Ритейл</td>
+        <td>5</td>
+        <td>+0.6%</td>
+        <td>IMOEX</td>
+        <td>100</td>
+        <td>4.2</td>
+        <td>0.7</td>
+      </tr>
+      <tr>
+        <td>Почта России</td>
+        <td>Логистика</td>
+        <td>75</td>
+        <td>-0.3%</td>
+        <td>IMOEX</td>
+        <td>400</td>
+        <td>6.1</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Балтика</td>
+        <td>Пищевая промышленность</td>
+        <td>70</td>
+        <td>+1.2%</td>
+        <td>IMOEX</td>
+        <td>200</td>
+        <td>5.8</td>
+        <td>1.0</td>
+      </tr>
+      <tr>
+        <td>ФК Открытие</td>
+        <td>Финансы</td>
+        <td>150</td>
+        <td>-0.1%</td>
+        <td>IMOEX</td>
+        <td>800</td>
+        <td>5.5</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>РуссНефть</td>
+        <td>Нефть и газ</td>
+        <td>400</td>
+        <td>+0.7%</td>
+        <td>IMOEX</td>
+        <td>600</td>
+        <td>7.2</td>
+        <td>1.4</td>
+      </tr>
+      <tr>
+        <td>Ренессанс Капитал</td>
+        <td>Финансы</td>
+        <td>120</td>
+        <td>+0.9%</td>
+        <td>IMOEX</td>
+        <td>500</td>
+        <td>6.8</td>
+        <td>1.5</td>
+      </tr>
+      <tr>
+        <td>Ашан</td>
+        <td>Ритейл</td>
+        <td>3500</td>
+        <td>+0.8%</td>
+        <td>IMOEX</td>
+        <td>1200</td>
+        <td>7.1</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <td>ЮниКредит</td>
+        <td>Финансы</td>
+        <td>180</td>
+        <td>-0.2%</td>
+        <td>IMOEX</td>
+        <td>1300</td>
+        <td>6.9</td>
+        <td>1.7</td>
+      </tr>
+      <tr>
+        <td>ВымпелКом</td>
+        <td>Телекоммуникации</td>
+        <td>280</td>
+        <td>+1.0%</td>
+        <td>IMOEX</td>
+        <td>900</td>
+        <td>5.6</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>Русский Уголь</td>
+        <td>Уголь</td>
+        <td>180</td>
+        <td>-0.4%</td>
+        <td>IMOEX</td>
+        <td>450</td>
+        <td>6.2</td>
+        <td>1.8</td>
+      </tr>
+      <tr>
+        <td>Почта Банк</td>
+        <td>Финансы</td>
+        <td>25</td>
+        <td>+0.5%</td>
+        <td>IMOEX</td>
+        <td>700</td>
+        <td>4.3</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>Тамбовский бекон</td>
+        <td>Агропромышленность</td>
+        <td>30</td>
+        <td>+0.6%</td>
+        <td>IMOEX</td>
+        <td>300</td>
+        <td>5.4</td>
+        <td>0.9</td>
+      </tr>
+    </table>
+
+</body>
+</html>

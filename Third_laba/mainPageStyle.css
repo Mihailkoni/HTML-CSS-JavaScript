@@ -1,0 +1,182 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/back.jpg);
+}
+
+/*раздел с поиском*/
+.search {
+    display: block;
+    background-color: rgb(128, 128, 128);
+    text-align: right;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+#searchField {
+    width: 60%;
+}
+
+#searchLogo {
+    text-decoration: none;
+}
+
+
+
+
+/*раздел с названием и менюшками*/
+.menu-bar {
+    display: block;
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+    /**/
+    text-align: center;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+/*Менюшки*/
+.menu-bar a {
+    display: inline-block;
+    margin: 0 70px;
+    /**/
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+/* Название */
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    /**/
+    font-size: 1.5em;
+}
+/*для выбранного меню*/
+#active {
+    color: red;
+}
+
+
+/*блок с картинками*/
+.forImages{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.firstImage{
+    display: block;
+    background-color: aquamarine;
+    margin-bottom: 2px;
+}
+
+.firstImage img {
+    width: 15%;
+    height: 200px;
+
+}
+
+.forSecondThirdImages {
+    display: inline-block;
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.forSecondThirdImages img {
+    width: 15%;
+    height: 100px;
+}
+
+.secondImage {
+    margin-right: 1px;
+}
+
+.thirdImage {
+    margin-left: 1px;
+}
+
+
+
+/*блок с тремя компаниями*/
+.company {
+    margin: 10px auto;
+    padding: 5px;
+    width: 82.8%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.company ul{
+    padding:0px;
+    margin: 0;
+}
+
+.company .item{
+    display: inline-block;
+    vertical-align: top;
+    border: black 1px solid;
+    width: 30%;
+    height: 700px;
+    
+    padding: 10px;
+}
+
+
+.company img {
+    border:gray solid 1px;
+    width: 20%;
+    height: 10%;
+    margin: 5px;
+}
+
+.company p,h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+}
+
+.company span{
+    display: inline;
+    text-align: justify;
+    white-space: normal;
+}
+
+.company .textBolded{
+    font-weight: bold;
+}
+
+
+.down {
+    overflow: hidden;
+    
+}
+
+
+.fio {
+    vertical-align: middle;
+    float: left;
+    white-space: nowrap;
+}
+        
+.mail {
+    display: inline-block;
+    background-color: rgb(128, 128, 128);
+    vertical-align: middle;
+    height: 30px;
+    margin: 0;
+    width: 100%;
+}
+  
+.contacts {
+    
+    float: right;
+    margin: 5px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+}
