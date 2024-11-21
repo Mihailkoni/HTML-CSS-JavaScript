@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href = "CSS/style.css" rel = "stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Вариант 80</title>
+</head>
+<body>
+    <!-- Заголовок и менюшки -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Заголовок -->
+                <a class="navbar-brand" href="#">InvestPro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключение навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- менюшки -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link link-primary" href="#">Инвестиции в российские компании</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Топ-50 российских компании</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Вопросы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- галерея -->
+    <div id="gallery" class="carousel carousel-dark slide mt-3 mb-3 mx-auto d-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/first.webp" class="d-block w-100 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="images/second.png" class="d-block w-100 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="images/third.png" class="d-block w-100 img-fluid">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev" color = "black">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+    <main>
+        <!-- контент -->
+        <div class="container mt-3">
+            <!-- Крупные блоки -->
+            <div class="row g-3">
+                <!-- Первый крупный блок -->
+                <div class="col-12 col-md-8">
+                    <div class="card bg-light">
+                        <img src="images/first-image.png" class="mx-auto d-block block-images img-fluid m-3" alt="Крупный блок">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Зачем инвестировать?</h5>
+                            <p class="card-text text-justify">Инвестиции для вашего будущего: управляйте капиталом, защищайте сбережения и умножайте доходы с нами. Инвестируйте в акции, облигации, фонды и криптовалюты. Получите доступ к профессиональным аналитикам, удобным инструментам и персонализированным стратегиям для максимизации ваших финансовых возможностей.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Второй крупный блок -->
+                <div class="col-12 col-md-4">
+                    <div class="card bg-light">
+                        <img src="images/second_image.png" class="mx-auto d-block block-images img-fluid m-3" alt="Боковой блок">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Кто может инвестировать?</h5>
+                            <p class="card-text">Инвестировать может каждый: от новичков до опытных профессионалов. Узнайте, как начать, выбрать стратегию и эффективно управлять капиталом.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Сетка из меньших блоков -->
+             <!-- Первый -->
+            <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/sberbank.png" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Сбербанк</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">Сбербанк является крупнейшим банком России и Восточной Европы. Инвестирование в акции Сбербанка может принести стабильные дивиденды, учитывая его доминирующее положение на финансовом рынке России.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Второй -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/gazprom.png" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Газпром</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">Газпром является крупнейшей газовой компанией в мире, контролируя значительные запасы природного газа в России.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Третий -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/lukoil.png" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Лукойл</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">ЛУКОЙЛ является одной из крупнейших частных нефтяных компаний в мире. Инвестиции в акции ЛУКОЙЛа привлекательны для тех, кто заинтересован в нефтегазовом секторе.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Четвёртый -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/yandex.jpg" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Яндекс</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">Яндекс — крупнейшая IT-компания России, которая активно развивает свои технологии в области поисковых систем, интернет-рекламы, а также облачных и транспортных сервисов.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Пятый -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/nornikel.jpg" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Норникель</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">Норникель является крупнейшим производителем никеля и палладия в мире, что делает его одним из важнейших игроков на рынке цветных металлов.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Шестой -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <!-- Первая строка: рисунок и заголовок -->
+                        <div class="d-flex align-items-center m-2">
+                            <img src="images/aeroflot.png" class="img-fluid me-3 block-images rounded border border-secondary-subtle" alt="Блок 1"> <!-- Изображение -->
+                            <h6 class="mb-0">Аэрофлот</h6> <!-- Заголовок -->
+                        </div>
+                        <!-- Вторая строка: текст -->
+                        <div class="card-body">
+                            <p class="card-text">Аэрофлот – одна из старейших и крупнейших авиакомпаний в мире. Сегодня Аэрофлот возглавляет группу из нескольких авиакомпаний, которые перевозят более 45 миллионов пассажиров в год по 248 направлениям в 60 странах.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!--контакты-->
+    <footer class="bg-light p-3 border-top border-dark mt-3 d-flex justify-content-between align-items-center">
+        <span>© Кориков М.Е., группа 6, 2024–2025</span>
+        <a href="#" class="float-end nav-link">Контакты</a>
+    </footer>
+    
+</body>
+</html>

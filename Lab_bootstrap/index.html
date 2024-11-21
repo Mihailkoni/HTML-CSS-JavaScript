@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href = "CSS/style.css" rel = "stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light ps-3 pe-3">
+            
+            <!--Заголовок-->
+            <a class="navbar-brand" href="#">Топ высотных зданий</a>
+            <!--кнопка свёрнутого меню-->
+            <button 
+                class = "navbar-toggler"
+                type = "button"
+                data-bs-toggle = "collapse"
+                data-bs-target ="#menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- меню -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Список зданий</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <!-- форма для поиска -->
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Найти">
+                    <button class="btn btn-outline-success" type="submit">Найти</button>
+                </form>
+            </div>
+           </nav>
+    </header>
+
+    <!-- Галерея -->
+    <div class="row  gy-3 text-center">
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image1.jpg" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image2.jpg" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image3.jpg" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image4.jpg" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image5.jpg" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+            <img class="img-fluid img-thumbnail" src="images/image6.jpg" alt="">
+        </div>
+    </div>
+
+    <hr>
+    <main class = "container" style = "max-width: 98%;">
+
+    <!-- Основной контент -->
+    <div class="row border">
+        <div class="col-md-9">
+            <h2>
+                CN Tower, <span class="text-muted">Торонто, Канада</span>
+            </h2>
+            <p class="lead align-justify">
+                553,3-метровая телевизионная башня. Была самым высоким свободно стоящим сооружением в мире с 1976 по 2007 год, 
+		        а также до сих пор остаётся таковым в Западном полушарии. Является символом Торонто.
+            </p>
+            <p class="lead align-justify">
+                Земляные работы для сооружения железобетонной конструкции с последующим 
+		        натяжением арматуры весом 130 000 т начались 12 февраля 1973 г., а уже 2 апреля 1975 г. возведение башни было завершено.  
+            </p>
+            <p class="lead align-justify">
+                Башня используется для телекоммуникационных нужд. Кроме того, башня используется как обзорная площадка. 
+		        Также на башне имеется вращающийся ресторан.
+            </p>
+            <p class="lead align-justify">
+                На высоте 447 м находится астрономическая обсерватория.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-fluid img-thumbnail mx-auto d-block" src="images/image9.jpg">
+        </div>
+    </div>
+    
+    
+    <div class = "row border">
+        <div class = "col-md-9 order-md-2">
+            <h2>
+                Бурдж-Халифа, <span class="text-muted">Дубай, ОАЭ</span>
+            </h2>
+
+            <p class = "lead align-justify">
+                Небоскрёб высотой 828 метров, самое высокое сооружение в мире. Форма здания напоминает сталагмит.
+            </p>
+
+            <p class = "lead align-justify">
+                Строительство небоскрёба началось в 2004 году и шло со скоростью 1—2 этажа в неделю. Ежедневно на строительстве 
+			    работало до 12 000 рабочих. На его создание ушло около 320 тыс. м³ бетона и более 60 тыс. тонн стальной арматуры. 
+			    Бетонные работы были завершены после возведения 160 этажа, далее шла сборка 180-метрового шпиля из металлических 
+			    конструкций.
+            </p>
+
+            <p class = "lead align-justify">
+                Специально для «Бурдж-Халифа» была разработана особая марка бетона, который выдерживает температуру до +50 °C.
+			    Бетонную смесь укладывали только ночью, а в раствор добавляли лёд.
+            </p>
+        </div>
+        
+        <div class="col-md-3 order-md-1">
+            <img class="img-fluid img-thumbnail mx-auto d-block" src="images/image10.jpg">
+        </div>
+    </div>
+
+
+    <div class ="row border">
+        <div class = "col-md-9">
+            <h2>
+                Небесное дерево, <span class="text-muted">Токио, Япония</span>
+            </h2>
+
+               <p class="lead align-justify" >
+                    Телевизионная башня в районе Сумида самая высокая среди телебашен мира. Высота телебашни вместе с антенной составляет 634 метра. 
+                    Высота башни была выбрана так, чтобы цифры: 6 (на старом японском «му»), 3 («са»), 4 («си») были созвучны «Мусаси» — 
+                    названию исторической области, где находится современный Токио.
+               </p>
+
+               <p class="lead align-justify">
+                    Здание напоминает пятиярусную пагоду, что хорошо сочетается с историческим районом Асакуса на другом берегу реки. 
+                    Основание башни напоминает штатив; с высоты примерно 350 м она имеет цилиндрическую форму, позволяющую наслаждаться 
+                    панорамными видами реки и города. 
+               </p>
+
+               <p class="lead align-justify">
+                    Имеются две наблюдательные площадки: одна на высоте 350 м (вместимостью 2000 человек), другая на высоте 450 м 
+                    (вместимостью 900 человек).
+               </p>
+        </div>
+
+        <div class="col-md-3">
+            <img class="img-fluid img-thumbnail mx-auto d-block" src="images/image11.jpg" alt="">
+        </div>
+    </div>
+    </main>
+
+    <footer class = "bg-light navbar-light py-4 mt-5">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6 text-center">
+                    <h5>&copy;Автор страницы:</h5>
+                    <p>Имя автора: Кориков Михаил</p>
+                    <p>Контакты: korikov.me@dvfu.ru</p>
+                </div>
+
+                <div class = "col-md-6 text-center">
+                    <h5>Социальные сети:</h5>
+                    <ul class = "list-unstyled">
+                        <li><a href = "https://github.com/Mihailkoni" target="_blank" class = "text-dark">GitHub</a></li>
+                        <li><a href = "https://t.me/korikov_mihail" target="_blank" class="text-dark">Telegram</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p> Ноябрь 2024, Дальневосточный федеральный университет</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
