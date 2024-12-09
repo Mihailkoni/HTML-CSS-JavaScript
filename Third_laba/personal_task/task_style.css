@@ -1,0 +1,23 @@
+.block {
+    display: block;
+    width: 45%;
+    background-color: lightgreen;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.item {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    font-size: 1vw;
+    background-color: white;
+    margin: 1%;
+    padding: 5px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#disable {
+    background-color: lightgreen;
+}
